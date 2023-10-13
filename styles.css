@@ -18,9 +18,14 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    color: #ffffff;
+    /* text-shadow: 1px 1px 0px #FF5733; */
+    font-size: 56px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    /* padding-top: 24px; */
+    margin: 0 auto;
 }
 
 .cta-button {
@@ -30,8 +35,9 @@ header h1 {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .cta-button:hover {
@@ -40,10 +46,6 @@ header h1 {
 
 section {
     padding: 2rem;
-}
-
-.about, .history {
-    background-color: #f8f8f8;
 }
 
 section h2 {
@@ -78,17 +80,38 @@ footer {
     padding: 1rem;
 }
 
+/* ... (your existing CSS code) ... */
+
 .sticky-header {
     position: fixed;
     width: 100%;
     top: 0;
     background-color: #333;
     color: #fff;
-    padding: 1rem;
     text-align: center;
-    transition: all 0.3s ease; /* Apply transition to all properties */
+    transition: padding 0.3s ease, font-size 0.3s ease; /* Apply transition to padding and font-size */
+    padding: 1rem;
 }
 
 .sticky-header.smaller {
-    padding: 0.5rem;
+    padding: 0.5rem; /* Adjust the padding as needed */
+}
+
+.smaller h1 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    transition: font-size 0.6s ease; /* Apply transition to font-size */
+}
+
+.sticky-header a.cta-button {
+    font-size: 1rem; /* Adjust the font size of the CTA button */
+    padding: 0.5rem 1rem; /* Adjust the padding of the CTA button */
+}
+
+.about, .history {
+    background-color: #f8f8f8;
+}
+
+.header-placeholder {
+    height: 200px; /* Adjust to match the height of your header */
+    visibility: hidden;
 }
