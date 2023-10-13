@@ -1,6 +1,48 @@
-/* style body */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: pink;
+    padding: 0;
+}
+
+.vintage-section, .modern-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.vintage-boxscore, .modern-boxscore {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.text-box {
     text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.text-box p {
+    margin: 0;
+}
+
+/* Vintage Section */
+.vintage-section {
+    background-image: url('static/01_newspaper_boxscore.jpg'); /* Replace with actual image path */
+}
+
+/* Modern Section */
+.modern-section {
+    background-image: url('static/02_online_boxscore.jpg'); /* Replace with actual image path */
 }
