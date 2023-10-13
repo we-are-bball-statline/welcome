@@ -1,19 +1,6 @@
 /* style body */
 body {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #c07777;
-}
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #890000;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #666;
+    margin: 0;
+    background: pink;
+    text-align: center;
 }
