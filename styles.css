@@ -19,6 +19,7 @@ header {
 
 header h1 {
     font-size: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -54,4 +55,40 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+.box {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box p {
+    padding: 1rem;
+}
+
+.sticky-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease; /* Apply transition to all properties */
+}
+
+.sticky-header.smaller {
+    padding: 0.5rem;
 }
