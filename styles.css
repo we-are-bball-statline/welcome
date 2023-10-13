@@ -1,48 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset default margins and paddings */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.vintage-section, .modern-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.vintage-boxscore, .modern-boxscore {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.text-box {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 8px;
-    max-width: 300px;
 }
 
-.text-box p {
-    margin: 0;
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* Vintage Section */
-.vintage-section {
-    background-image: url('static/01_newspaper_boxscore.jpg'); /* Replace with actual image path */
+.cta-button {
+    display: inline-block;
+    background-color: #FF5733;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-/* Modern Section */
-.modern-section {
-    background-image: url('static/02_online_boxscore.jpg'); /* Replace with actual image path */
+.cta-button:hover {
+    background-color: #E64A19;
+}
+
+section {
+    padding: 2rem;
+}
+
+.about, .history {
+    background-color: #f8f8f8;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
