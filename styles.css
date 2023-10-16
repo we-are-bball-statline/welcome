@@ -1,117 +1,228 @@
-/* Reset default margins and paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-header h1 {
-    color: #ffffff;
-    /* text-shadow: 1px 1px 0px #FF5733; */
-    font-size: 56px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    /* padding-top: 24px; */
-    margin: 0 auto;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #FF5733;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    /* margin-top: 1rem; */
-}
-
-.cta-button:hover {
-    background-color: #E64A19;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 section {
-    padding: 2rem;
+  padding: 7em 0;
 }
 
-section h2 {
-    margin-bottom: 1rem;
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.box {
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.split > * {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 15em;
 }
 
-.box h2 {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background-color: #333;
-    color: #fff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
 }
 
-.box p {
-    padding: 1rem;
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, #fff);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: .5em 1.25em;
+  background: var(--clr-accent, blue);
+  border-radius: .25em;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
 }
 
-/* ... (your existing CSS code) ... */
-
-.sticky-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    transition: padding 0.3s ease, font-size 0.3s ease; /* Apply transition to padding and font-size */
-    padding: 1rem;
+.btn:hover,
+.btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
 }
 
-.sticky-header.smaller {
-    padding: 0.5rem; /* Adjust the padding as needed */
+.primary-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
 }
 
-.smaller h1 {
-    font-size: 1.5rem; /* Adjust the font size as needed */
-    transition: font-size 0.6s ease; /* Apply transition to font-size */
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
 }
 
-.sticky-header a.cta-button {
-    font-size: 1rem; /* Adjust the font size of the CTA button */
-    padding: 0.5rem 1rem; /* Adjust the padding of the CTA button */
+.hero {
+  color: white;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
 }
 
-.about, .history {
-    background-color: #f8f8f8;
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background: url(../img/01.jpg), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
-.header-placeholder {
-    height: 200px; /* Adjust to match the height of your header */
-    visibility: hidden;
+.featured {
+  background: #eee;
+}
+
+.featured__item {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.featured__item:hover, .featured__item:focus {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.featured__item:hover .featured__details, .featured__item:focus .featured__details {
+  opacity: 1;
+  text-shadow: 0 0 2em white;
+}
+
+.featured__item::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 75% 75% 0 0;
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
+}
+
+.featured__details {
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.featured__details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.product {
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.product__title {
+  font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.product__image {
+  margin: -5em 0 0 0;
+}
+
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+    margin-bottom: 9em;
+  }
+  .product__title {
+    margin: 0;
+  }
+  .product__image {
+    float: right;
+    width: 65%;
+    shape-outside: url(../img/shoe-1.png);
+    shape-margin: 1em;
+    margin: 0 -5em 0 0;
+  }
+  .product.shoe-left .product__image {
+    float: left;
+    shape-outside: url(../img/shoe-2.png);
+    margin: 0 0 0 -5em;
+    shape-margin: 2em;
+  }
+}
+
+.hero {
+  --clr-accent: #faa700;
+}
+
+.shoe-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.shoe-white {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
 }
