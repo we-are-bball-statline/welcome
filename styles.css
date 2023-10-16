@@ -10,6 +10,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.6;
   background-color: #f0f0f0e9;
+  line-break: normal;
 }
 
 img {
@@ -172,7 +173,7 @@ section {
 }
 
 .feature__title {
-  font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
+  font-size: 36px;
   text-transform: uppercase;
   line-height: 1;
   color: #fff;
