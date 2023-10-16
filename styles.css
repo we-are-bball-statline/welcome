@@ -183,7 +183,7 @@ section {
   margin: -5em 0 0 0;
 }
 
-@media (min-width: 45em) {
+/* @media (min-width: 45em) {
   .feature {
     text-align: left;
     margin-bottom: 9em;
@@ -197,13 +197,13 @@ section {
     shape-margin: 1em;
     margin: 0 -5em 0 0;
   }
-  /* .feature.shoe-left .feature__image {
+  .feature.shoe-left .feature__image {
     float: left;
     shape-outside: url(../img/shoe-2.png);
     margin: 0 0 0 -5em;
     shape-margin: 2em;
-  } */
-}
+  }
+} */
 
 .hero {
   --clr-accent: #faa700;
