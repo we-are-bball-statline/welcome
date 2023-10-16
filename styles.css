@@ -192,7 +192,7 @@ section {
     margin: 0;
   }
   .feature__image {
-    float: right;
+    float: center;
     width: 65%;
     shape-margin: 1em;
     margin: 0 -5em 0 0;
