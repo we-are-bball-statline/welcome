@@ -31,7 +31,7 @@ section {
 
 .container {
   width: 85%;
-  max-width: 65em;
+  max-width: 768px;
   margin: 0 auto;
 }
 
