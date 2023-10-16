@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.6;
+  background-color: #f0f0f0e9;
 }
 
 img {
@@ -102,7 +103,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url(../img/01.jpg), radial-gradient(#444, #111);
+    background: url('img/01.png'), radial-gradient(#444, #111);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -162,7 +163,7 @@ section {
   font-size: 2.5rem;
 }
 
-.product {
+.feature {
   background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
   padding: 3em;
   border-radius: 1em;
@@ -170,7 +171,7 @@ section {
   text-align: center;
 }
 
-.product__title {
+.feature__title {
   font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
   text-transform: uppercase;
   line-height: 1;
@@ -178,50 +179,49 @@ section {
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 
-.product__image {
+.feature__image {
   margin: -5em 0 0 0;
 }
 
 @media (min-width: 45em) {
-  .product {
+  .feature {
     text-align: left;
     margin-bottom: 9em;
   }
-  .product__title {
+  .feature__title {
     margin: 0;
   }
-  .product__image {
+  .feature__image {
     float: right;
     width: 65%;
-    shape-outside: url(../img/shoe-1.png);
     shape-margin: 1em;
     margin: 0 -5em 0 0;
   }
-  .product.shoe-left .product__image {
+  /* .feature.shoe-left .feature__image {
     float: left;
     shape-outside: url(../img/shoe-2.png);
     margin: 0 0 0 -5em;
     shape-margin: 2em;
-  }
+  } */
 }
 
 .hero {
   --clr-accent: #faa700;
 }
 
-.shoe-red {
+.feature-red {
   --clr-inner: #faa700;
   --clr-outer: #e48d00;
   --clr-accent: #a1173c;
 }
 
-.shoe-white {
+.feature-white {
   --clr-inner: #fce4b3;
   --clr-outer: #eac886;
   --clr-accent: #2f4858;
 }
 
-.shoe-blue {
+.feature-blue {
   --clr-inner: #6dd5ed;
   --clr-outer: #2193b0;
   --clr-accent: #008951;
