@@ -259,3 +259,39 @@ section {
   --clr-outer: #787878;
   --clr-accent: #333;
 }
+
+.feature-magenta {
+  --clr-inner: #ff66b3;
+  --clr-outer: #cc0052;
+  --clr-accent: #330033;
+}
+
+.feature-amber {
+  --clr-inner: #ffc107;
+  --clr-outer: #ff9800;
+  --clr-accent: #795548;
+}
+
+.feature-lime {
+  --clr-inner: #cddc39;
+  --clr-outer: #8bc34a;
+  --clr-accent: #3f51b5;
+}
+
+.feature-cyan {
+  --clr-inner: #00bcd4;
+  --clr-outer: #009688;
+  --clr-accent: #f44336;
+}
+
+.feature-indigo {
+  --clr-inner: #3f51b5;
+  --clr-outer: #673ab7;
+  --clr-accent: #e91e63;
+}
+
+.feature-gray {
+  --clr-inner: #9e9e9e;
+  --clr-outer: #607d8b;
+  --clr-accent: #ffeb3b;
+}
