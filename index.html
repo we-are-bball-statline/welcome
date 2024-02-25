@@ -1,93 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>We are BBALL-STATLINE.</title>
-  <meta name="description" content="Discover BBALL-STATLINE, the ultimate platform for basketball stats and analytics. Dive into dynamic visualizations, percentile analysis, and historical data dating back to the 1980s.">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css" rel="stylesheet" integrity="shaXXX" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 <body>
-    <header class="hero">
-        <div class="container spacing">
-          <h1 class="primary-title">experience basketball stats like never before</h1>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam perspiciatis facilis beatae laudantium
-            quidem enim sit sequi!</p> -->
-          <a href="https://www.bball-statline.com" class="btn">Start Analyzing</a>
+
+    <!-- Navbar -->
+    <div class="container">
+        <div class="row fixed-top own_headerrow">
+            
+            
+                    <div class="col-6 d-flex justify-content-between align-items-center">
+                        <h1 class="site-title text-nowrap mb-0">BBALL-STATLINE</h1>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <button class="btn btn-navbar btn-primary" type="button">Try It</button>
+                    </div>
         </div>
-      </header>
-    
-      <main>
-        <section class="our-features">
-          <div class="container">
-            <h2 class="section-title">BBALL-STATLINE</h2>
-    
-            <article class="feature feature-red spacing">
-              <img src="img/02.png" alt="" class="feature__image">
-              <h3 class="feature__title">interactive visualizations</h3>
-              <p class="feature__description">Explore Dynamic Data: Dive into our interactive charts with vibrant color schemes and hover for instant insights.</p>
-              <a href="https://www.bball-statline.com" class="btn">Dive into Data</a>
-            </article>
-
-            <article class="feature feature-blue spacing">
-              <img src="img/04.png" alt="" class="feature__image">
-              <h3 class="feature__title">percentile analysis</h3>
-              <p class="feature__description">Ever wonder how a player stacks up against the rest? Our app uses percentiles to give you the scoop. It's a powerful tool that breaks down stats into easy-to-understand parts. </p>
-              <a href="https://www.bball-statline.com" class="btn">Compare the Percentiles</a>
-            </article>
-    
-            <article class="feature feature-teal feature-left spacing">
-              <img src="img/03.png" alt="" class="feature__image">
-              <h3 class="feature__title">data from the 80s era until today</h3>
-              <p class="feature__description">Our app visualizes season statistics for every single player who has played in the professional league since 1980!</p>
-              <a href="https://www.bball-statline.com" class="btn">Explore Stats</a>
-            </article>
-
-            <article class="feature feature-coral spacing">
-              <img src="img/05.png" alt="" class="feature__image">
-              <h3 class="feature__title">illustrating performance shifts through in-season trades</h3>
-              <p class="feature__description">Witness the impact of in-season trades. We provide multiple data points for players transitioning between teams in a season, offering a clear view of their adaptability and versatility in their new environment..</p>
-              <a href="https://www.bball-statline.com" class="btn">Track Trade Impacts</a>
-            </article>
-            
-            <article class="feature feature-magenta spacing">
-              <img src="img/06.png" alt="" class="feature__image">
-              <h3 class="feature__title">True Performance Measure</h3>
-              <p class="feature__description">Level the playing field with our 'Per 36 Minutes View'. Compare players fairly, regardless of court time. Ideal for uncovering hidden gems and evaluating player impact consistently.</p>
-              <a href="https://www.bball-statline.com/per_36_minutes" class="btn">Explore Fair Comparisons</a>
-            </article>
-            
-            <article class="feature feature-amber spacing">
-              <img src="img/07.png" alt="" class="feature__image">
-              <h3 class="feature__title">Per 100 Possessions Analysis</h3>
-              <p class="feature__description">Get a true sense of player efficiency with our 'Per 100 Possessions View'. Ideal for in-depth strategy and trend analysis, this metric offers insights into player performance beyond traditional stats.</p>
-              <a href="https://www.bball-statline.com/per_100_possessions" class="btn">Uncover Deeper Insights</a>
-            </article>
-            
-            <article class="feature feature-lime spacing">
-              <img src="img/08.png" alt="" class="feature__image">
-              <h3 class="feature__title">Any Device, Anywhere</h3>
-              <p class="feature__description">Experience basketball analytics on-the-go! Our app is now fully optimized for mobile and tablet use, ensuring you get the same rich insights and smooth experience across all your devices.</p>
-              <a href="https://www.bball-statline.com" class="btn">Analyze on Any Device</a>
-            </article>
-            
-            <article class="feature feature-beige spacing">
-              <!-- <img src="img/05.png" alt="" class="feature__image"> -->
-              <h3 class="feature__title">bball-statline</h3>
-              <p class="feature__description">Welcome to BBALL-STATLINE, where basketball stats come to life. Our team of NBA enthusiasts and data science experts have crafted a dynamic, visual experience that transforms stats from the past 43 seasons. Discover hidden trends, grasp distribution characteristics, and explore player connections effortlessly with our intuitive tool. Whether you're a seasoned fan or new to the game, our user-centric design ensures everyone's engaged. Join us on this journey to revolutionize how we experience basketball statistics.</p>
-              <a href="https://www.bball-statline.com" class="btn">Start Analyzing</a>
-            </article>
-
-          </div>
+    </div>
+    <section id="section-hero">
+        <div class="container">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <h1>experience basketball stats<br>like never before</h1>
+                </div>
+        </div>
+    </section>
+    <div class="container-fluid container-top-feature">
+        <section id="section-top-feature">
+            <div class="container">
+                <div class="row row-top-feature">
+                    <div class="col-lg-6 col-12">
+                        <h1>INTERACTIVE VISUALIZATIONS</h1>
+                        <p>Dive into our interactive charts with vibrant color schemes and hover for instant insights.</p>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <video src="./assets/webm/01.webm" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+                    </div>
+                </div>
+            </div>
         </section>
-    
-      </main>
+        <section id="section-top-feature">
+            <div class="container">
+                <div class="row row-top-feature">
+                    <div class="col-lg-6 col-12">
+                        <video src="./assets/webm/02.webm" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <h1 class="text-start">PERCENTILE ANALYSIS</h1>
+                        <p class="text-start">Ever wonder how a player stacks up against the rest? Our app uses percentiles to give you the scoop. It's a powerful tool that breaks down stats into easy-to-understand parts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-top-feature">
+            <div class="container">
+                <div class="row row-top-feature">
+                    <div class="col-lg-6 col-12">
+                        <h1>DATA FROM THE 80S ERA UNTIL TODAY</h1>
+                        <p>Our app visualizes season statistics for every single player who has played in the professional league since 1980!</p>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <video src="./assets/webm/03.webm" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section id="section-cta">
+            <div class="row row-cta">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="row">    
+                        <h1 class="mb-5">try it for free</h1>
+                        <button class="btn btn-cta btn-navbar btn-primary" type="button">Start Analyzing</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid container-charts">
+        <section id=" section-charts">
+            <div class="container">
+                <!-- First Row -->
+                <div class="row row-top-feature">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="">BBALL-STATLINE CHARTS</h1>
+                        </div>
+                    </div>
+                    <div class="row row-charts">
+                        <hr>
+                        <div class="col-md-6">
+                            <h2 class="">Awards, Title & Availabilty Chart </h2>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column justify-content-end">
+                            <h2>Variables</h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column justify-content-end">
+                            <h2>Indicator</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row row-charts">
+                        <div class="col-md-6">
+                            <!-- <h2>Availabilty</h2> -->
+                            <video src="./assets/webm/01.webm" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+                            <p>This visualization illustrates the number of games played by the athlete in each season, their team affiliations over the years, the awards earned, and the titles won, all brought to life in a comprehensive bar chart. Enhanced with additional scatter plots, color mapping, and detailed hover information, our chart offers a rich, multi-dimensional view of an athlete's career at a glance.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Team</p>
+                            <p>Games played</p>
+                            <p>All-Star</p>
+                            <p>MVP</p>
+                            <p>Champion</p>
+                            <p>ROTY</p>
+                            <p>6th Man, DPOY</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Bar color</p>
+                            <p>Bar height</p>
+                            <p>✩</p>
+                            <p>⟡</p>
+                            <p>⃘</p>
+                            <p>◇ in first bar</p>
+                            <p>◇</p>
+                        </div>
+                    </div>
+                    <div class="row row-charts">
+                        <hr>
+                        <div class="col-md-6">
+                            <h2 class="">Availabilty Percentile Chart</h2>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column justify-content-end">
+                            <h2>Variables</h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column justify-content-end">
+                            <h2>Indicator</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row row-charts">
+                        <div class="col-md-6">
+                            <!-- <h2>Availabilty</h2> -->
+                            <img src="./assets/img/avail_perc.png" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></img>
+                            <p>Dive into our "Availabilty Percentile" chart, a simple yet insightful visualization that reveals how an athlete's game participation compares to the rest of the league over time.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Percentile: Games Played</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>line</p>
+                            <p></p>
+                            <p>A percentile is a measure that indicates the value below which a given percentage of observations falls. For instance, if a player is in the 90th percentile for games played, this means they've participated in more games than 90% of their peers in the same period.</p>
+                        </div>
+                    </div>
+                    <div class="row row-charts">
+                        <hr>
+                        <div class="col-md-6">
+                            <h2 class="">Scoring Chart</h2>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column justify-content-end">
+                            <h2>Variables</h2>
+                            <hr>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column justify-content-end">
+                            <h2>Indicator</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row row-charts">
+                        <div class="col-md-6">
+                            <img src="./assets/img/scoring.png"></img>
+                            <p>Check out our Scoring chart for a straightforward look at how a player racks up their points. This chart features a line showing total points scored over time, and the area underneath that line is split into three parts to show you exactly where those points are coming from: two-pointers, three-pointers, and free throws.
+
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <p>Points</p>
+                            <p></p>
+                            <p>Points by FT's</p>
+                            <p>Points by 3P's</p>
+                            <p>Points by 2P's</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <p>Line</p>
+                            <p></p>
+                            <p>light area</p>
+                            <p>middle area</p>
+                            <p>dark area</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <h2 class="text-start">and many more...</h2>
+                        <div class="col-md-9">
+                            <h2 class="text-start">check out our glossary for detailed information or</h2>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-navbar btn-primary" type="button">Start Analyzing</button>
+                        </div>
+                    </div>
+                <!-- Additional rows can follow the same structure as needed -->
+            </div>
+        </section>
+    </div>
 
 
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-qQbNVPo5tQ1tEPv2mbgu3SROO1FV2b3I3Tb8V7N8uaSB4g+1B8hI5B7F3hTJ3EpD" crossorigin="anonymous"></script>
 </body>
-</html>

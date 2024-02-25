@@ -1,0 +1,12 @@
+h1 {
+    font-size: xx-large;
+    color: #ff7300;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    background-color: #5e1d1de9;
+    line-break: normal;
+  }
