@@ -1,12 +1,212 @@
-h1 {
-    font-size: xx-large;
-    color: #ff7300;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* This ensures there's no space around the <body> and <html> elements */
 }
 
-body {
-    margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.6;
-    background-color: #5e1d1de9;
-    line-break: normal;
+.own_headerrow {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.4);
+    height: 60px;
+    margin-bottom: 0px;
+}
+
+
+h1 {
+    padding-left: 20px;
+    margin-bottom: 0px;
+    color: #052d46;
+}
+
+.btn-navbar {
+    /* width: 50%; */
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: #052d46;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #1a5276;
+    color: white;
+    border-color: #052d46 ;
+}
+
+#section-hero {
+    display: flex;
+    justify-content: center;        /* Centers horizontally */
+    align-items: center;            /* Centers vertically */
+    height: 100vh;                  /* height = 100% of the viewport height */
+    text-align: center;             /* Ensures the text inside h1 is centered if it wraps */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(0, 0, 0, 0.2)), url('./assets/img/hero.png');
+    background-size: cover;         /* Cover the entire section */
+    background-position: center;    /* Center the background image */
+}
+
+#section-hero h1 {
+    /* padding-top: 100px; */
+    font-size: 3rem;
+    color: #052d46;
+    text-align: center;
+    display: block;
+}
+
+.container-top-feature {
+    justify-content: center;
+    align-items: center;
+    /* min-height: 120vh; */
+    /* height: 100vh; */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to bottom, #508AA8, #052d46);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.row-top-feature {
+    min-height: calc(90vh - 60px); /* Adjust if navbar height changes */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+#section-top-feature h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: right;
+    display: block;
+    padding: 20px;
+}
+
+#section-top-feature p {
+    font-size: 2rem;
+    color: #ffffff;
+    display: block;
+    text-align: right; 
+    padding: 20px;
+}
+
+#section-top-feature video {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.5);
+    /* padding: 20px; */
+    /* margin-right: 20px; */
+}
+
+.row-cta {
+    justify-content: center;        /* Centers horizontally */
+    align-items: center;            /* Centers vertically */
+    height: 80vh;                  /* height = 100% of the viewport height */
+    text-align: center;             /* Ensures the text inside h1 is centered if it wraps */
+    background-size: cover;         /* Cover the entire section */
+    background-position: center;    /* Center the background image */
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#section-cta h1 {
+    /* padding-top: 100px; */
+    font-size: 3rem;
+    color: #052d46;
+    text-align: center;
+    display: block;
+}
+
+.container-charts {
+    justify-content: center;
+    align-items: center;
+    /* min-height: 120vh; */
+    /* height: 100vh; */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to bottom, #508AA8, #052d46);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.container-charts h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: left;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-charts h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+    display: block;
+    padding: 20px;
+}
+
+.container-charts video {
+    max-width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    /* margin-right: 20px; */
+}
+
+.container-charts img {
+    max-width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    /* margin-right: 20px; */
+}
+
+.container-charts p {
+    font-size: 1rem;
+    color: #ffffff;
+    display: block;
+    text-align: left; 
+    padding: 20px;
+}
+
+hr  {
+    height: 5px;
+    color: #ffffff;
+}
+
+.sticky-top-row {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensure it stays on top of other content */
+    padding-top: 32px;
+    background-color: #052d46;
+    /* background-color: inherit; */
   }
+  
+  @media (max-width: 768px) {
+    .own_headerrow, .row-top-feature, .row-cta, .container-charts h1, .container-charts p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #section-hero h1, #section-top-feature h1, #section-top-feature p, #section-cta h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .btn-navbar {
+        padding: 8px 16px; /* Adjust button size for easier tapping */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    .container, .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
